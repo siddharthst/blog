@@ -1,0 +1,64 @@
+baseurl = "https://www.scilen.se"
+languageCode = "en"
+title = "Musings"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/siddharthst/blog\">Siddharth Tomar</a> 2019"
+disqusShortname = ""
+googleAnalytics = ""
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
+
+[params.features]
+disqusOnDemand = false  # Load Disqus comments on click
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.rss]
+
+includeContent = true # Includes whole content in rss
+authorName = "Siddharth S. Tomar" # Site author's full name
+authorEmail = ""
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = false # Adds powered by Hugo and Kiss below Copyright section
+related = true # Includes related articles
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+twitter = "siddharth_404"
+github = "siddharthst"
+
+
+[params.social.config]
+platforms = ["twitter","github"]
+
+[params.matomoAnalytics]
+siteID = 1
+rootURL = ""
+
+[params.fathomAnalytics]
+rootURL = ""
+
+[taxonomies]
+tag ="tags"
+categories = "categories"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[params.sections_left]
+tags = "tags"
+categories = "categories"
