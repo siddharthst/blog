@@ -1,6 +1,6 @@
-baseurl = ""
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Musings"
+title = "Natrium Theme"
 theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
@@ -35,7 +35,7 @@ pygmentsStyle = "native"
     description = ""
 
     [params.logo]
-    url = "logo.svg"
+    url = "logo.png"
     width = 50
     height = 50
-alt = "Logo"
+    alt = "Logo"
