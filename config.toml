@@ -1,29 +1,6 @@
 baseURL = "https://www.scilen.se/"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "Musings"
-theme = "hermit"
-# enableGitInfo = true
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-# googleAnalytics = "UA-123-45"
-# disqusShortname = "yourdiscussshortname"
-
-[author]
-  name = "Siddharth S. Tomar"
-
-[blackfriday]
-  hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
+theme = "hello-friend-ng"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -32,41 +9,38 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
+  description = "Personal blog of Siddharth S. Tomar"
+  keywords = "homepage, blog, programming, python, plotting, etc"
+  images = [""]
 
-  homeSubtitle = "Nothing too complicated"
-  # footerCopyright = '&copy; Copyright 2019 Siddharth S. Tomar'
-  # bgImg = ""  # Homepage background-image URL
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
+[languages]
+  [languages.en]
+    title = "Musings"
+    subtitle = "Nothing too special"
+    keywords = ""
+    copyright = "Siddharth S. Tomar"
+    readOtherPosts = "Read other posts"
 
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
+    [languages.en.params.logo]
+      logoText = "Home"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
-
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
- # [[params.social]]
- #   name = "twitter"
- #   url = "https://twitter.com/"
-
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/siddharthst"
-
+# And you can even create generic menu
 [menu]
-
   [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
-
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
   [[menu.main]]
-    name = "About"
-    url = "about/"
-weight = 20
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
