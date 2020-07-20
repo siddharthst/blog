@@ -1,17 +1,8 @@
 {{ partial "header.html" . }}
 <body>
-<style>
-  body {
-    padding-left: 0 !important;
-  }
-  p {
-    width: 100%;
-  }
-</style>
-<div id="homepage">
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
 {{ partial "brand.html" . }}
-{{ partial "banner.html" . }}
-
 {{ range .Site.Pages }}
   {{if eq .Type "post" }}
     {{if eq .Title "Posts"}}
@@ -25,6 +16,8 @@
   {{ end }}
 {{ end  }}
 {{ partial "footer.html" . }}
+</article>
 </div>
 </body>
 </html>
+
