@@ -1,8 +1,7 @@
----
-title: About this blog and me
-author: Siddharth S. Tomar
-date: '2019-02-14'
----
++++
+title = "About This Site"
+hasMath = false 
++++
 
 I'm a bioinformatician currently taking a break.
 This blog doesn't offer search, analytics or anything with flair — I aim to keep the blog HTTP cookie and tracking free. The blog does use a content delivery framework for JS snippets and Google fonts.

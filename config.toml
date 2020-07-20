@@ -1,46 +1,88 @@
 baseURL = "https://www.scilen.se/"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = true 
+canonifyurls = true
+theme = "hugo-tufte"
+title = "Musings"
+
+[taxonomies]
+  category = "categories" 
+  group = "groups"
+  series = "series"
+  tag = "tags"
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  subtitle = "Nothing too special."
+  copyrightHolder = "Siddharth S. Tomar"
+  showPoweredBy = false
 
-  # Metadata mostly used in document's head
-  description = "Personal blog of Siddharth S. Tomar"
-  keywords = "homepage, blog, programming, python, plotting, etc"
-  images = [""]
+# -----------------------------------------------------------------------
+# Navigation menu 
+# -----------------------------------------------------------------------
+[[menu.nav]]
+  name = "Home"
+  pre = "<i class='fa fa-home fa-lg'></i> "
+  weight = -110 
+  identifier = "home"
+  url = "/"
+[[menu.nav]]
+  name = "Posts"
+  pre = "<i class='fa fa-book fa-lg'></i> "
+  weight = -100 
+  identifier = "posts"
+  url = "/posts"
+[[menu.nav]]
+  name = "Categories"
+  pre = "<i class='fa fa-tags fa-lg'></i> "
+  weight = -90 
+  identifier = "categories"
+  url = "/categories"
 
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
+# -----------------------------------------------------------------------
+# Footer menu 
+# -----------------------------------------------------------------------
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-github fa-2x'></i> "
+  weight = -100 
+  identifier = "github"
+  url = "https://github.com/shawnohare/hugo-tufte"
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-twitter fa-2x'></i> "
+  weight = -90 
+  identifier = "twitter"
+  url = "https://twitter.com"
 
-[languages]
-  [languages.en]
-    title = "Musings"
-    subtitle = "Nothing too special"
-    keywords = ""
-    copyright = "Siddharth S. Tomar"
-    readOtherPosts = "Read other posts"
 
-    [languages.en.params.logo]
-      logoText = "Home"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
-# And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
